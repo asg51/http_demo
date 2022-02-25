@@ -7,6 +7,6 @@ class ProductApi{
  return http.get(Uri.parse("http://10.0.2.2:5000/api/Products/getAll"));
   }
   static Future getProductsByCategoryId(int categoryId) {
-    return http.get(Uri.parse("http://10.0.2.2:5000/api/Products/getAll"));
+    return http.get(Uri.parse("http://10.0.2.2:5000/api/Products/getbycategory?categoryId=$categoryId"));
   }
 }

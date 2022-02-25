@@ -5,6 +5,7 @@ import 'package:http_demo/data/api/category_api.dart';
 import 'package:http_demo/data/api/product_api.dart';
 import 'package:http_demo/models/category.dart';
 import 'package:http_demo/models/product.dart';
+import 'package:http_demo/widgets/product_list_widget.dart';
 
 class MainScreen extends StatefulWidget {
   @override
@@ -44,7 +45,8 @@ class _MainScreenState extends State {
               child: Row(
                 children: categoryWidgets,
               ),
-            )
+            ),
+            ProductListWidget(products),
           ],
         ),
       ),
